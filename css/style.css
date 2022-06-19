@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f6f9f9;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #2d3950;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.banner {
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+
+.banner h1 {
+    color: #ffffff;
+    font-size: 100px;
+    font-family: 'Lato', sans-serif;
+}
+
+.banner span {
+    display: block;
+    height: 2px;
+    width: 80%;
+    background: #15a4fa;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-family: 'Lato', sans-serif;
+    color: #ffff;
+    font-size: 16px;
+}
+
+.btn-custom {
+    color: #ffff;
+    border: 1px solid #15a4fa;
+    padding: 0;
+    padding: 10px 20px;
+}
+
+.btn-custom:hover {
+    background-color: #15a4fa;
+    color: #ffff;
+}
+
+.height {
+    align-items: center;
+    min-height: 90vh;
+}
+
+.btn-custom:focus {
+    box-shadow: none;
+}
+
+.icon {
+    position: absolute;
+    color: #ffff;
+    left: 50%;
+    bottom: 100px;
+    transform: translate(-50%);
+    font-size: 20px;
+    animation: 1s linear 0s infinite alternate none running updown;
+}
+
+@keyframes updown {
+    0% {
+        bottom: 70px;
+    }
+
+    100% {
+        bottom: 40px;
+    }
+}
+
+.simple_content {
+
+    background: #f6f9f9;
+
+    text-align: center;
+}
+
+.simple_content h1 {
+
+    margin-top: 50px;
+
+    margin-bottom: 20px;
+
+    font-family: 'Lato', sans-serif;
+
+    font-weight: 400;
+}
+
+.simple_content p {
+    color: #a7a8a8;
+    font-size: 24px;
+    margin: auto;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+.feature {}
+
+.feature_icon {
+    height: 100px;
+    width: 100px;
+    background:
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,5fc3ff+50,5fc3ff+100 */
+        background: #48baff;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#48baff', endColorstr='#5fc3ff', GradientType=1);
+    /* IE6-9 */
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #8a8e98;
+}
+
+.feature p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #8a8e98;
+}
+
+.gallary {
+    background-color: #f6f9f9;
+}
+
+.gallary h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+
+.gallary p {
+    font-family: 'Lato', sans-serif;
+    color: #b6b7b7;
+}
+
+.gallary_item {
+    position: relative;
+}
+
+.gallary_item img {
+    width: 100%;
+}
+
+.gallary_item::before {
+    content: '';
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 0%;
+    height: 100%;
+    background-color: #2aaaf6;
+    opacity: 0.8;
+    transition: .6s, all ease-in-out;
+}
+
+.gallary_item:hover::before {
+    width: 100%;
+}
+
+.gallary_icon {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -60px);
+    opacity: 0;
+    z-index: 9;
+    transition: .4s all ease-in-out;
+}
+
+.gallary_icon ul {
+    list-style: none;
+    margin: 1px;
+    padding: 0;
+    display: flex;
+}
+
+.gallary_icon ul li {
+    margin: 5px;
+    border: 1px solid#ffff;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+}
+
+.gallary_icon ul li a {
+    color: #ffff;
+}
+
+.gallary_icon ul li a i {}
+
+.gallary_item:hover .gallary_icon {
+    opacity: 1;
+}
+
+.contract_section {
+    background-image: url(../images/footer-banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #2e384c;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contract_section h2 {
+    color: #ffffff;
+    margin: auto;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 60px;
+}
+
+.contract_section p {
+    color: #ffffff;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 50px;
+}
+
+.contract_section form {
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}
+
+.contract_section form input {
+    width: 100%;
+    background: transparent;
+    padding: 7px;
+    border: none;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+.contract_section form textarea {
+    width: 100%;
+    background: transparent;
+    padding: 7px;
+    border: none;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+.send_form {
+    display: flex;
+}
+
+.checkbox {
+    width: 25%;
+}
+
+.checkbox input {
+    width: 20px !important;
+}
+
+.checkbox p {}
+
+.send_btn {}
+
+.send_btn input {}
